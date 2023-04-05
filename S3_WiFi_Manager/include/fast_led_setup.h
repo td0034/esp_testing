@@ -148,3 +148,16 @@ void setup_FastLED()
     currentPalette = RainbowColors_p;
     currentBlending = LINEARBLEND;
 }
+
+void (runLEDshow)()
+{
+  ChangePalettePeriodically();
+    
+  static uint8_t startIndex = 0;
+  startIndex = startIndex + 1; /* motion speed */
+  
+  FillLEDsFromPaletteColors( startIndex);
+  
+  FastLED.show();
+  FastLED.delay(1000 / UPDATES_PER_SECOND);
+}
