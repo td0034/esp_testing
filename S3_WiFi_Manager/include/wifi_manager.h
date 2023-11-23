@@ -754,8 +754,8 @@ Serial.print(F("\nStarting AutoConnectAP using ")); Serial.print(FS_Name);
   chipID.toUpperCase();
 
   // SSID and PW for Config Portal
-  String AP_SSID = "ESP_" + chipID + "_AutoConnectAP";
-  String AP_PASS = "MyESP_" + chipID;
+  String AP_SSID = "EMDR Tool " + chipID;
+  String AP_PASS = "emdrtool";
 
   if (initialConfig)
   {

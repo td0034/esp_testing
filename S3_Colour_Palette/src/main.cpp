@@ -3,8 +3,8 @@
 #include <FastLED.h>
 
 #define LED_PIN     38
-#define NUM_LEDS    3
-#define BRIGHTNESS  30
+#define NUM_LEDS    1
+#define BRIGHTNESS  255
 #define LED_TYPE    SK6812
 #define COLOR_ORDER GRB
 CRGB leds[NUM_LEDS];
@@ -157,7 +157,7 @@ void setup() {
 
 void loop()
 {
-    ChangePalettePeriodically();
+    //ChangePalettePeriodically();
     
     static uint8_t startIndex = 0;
     startIndex = startIndex + 1; /* motion speed */

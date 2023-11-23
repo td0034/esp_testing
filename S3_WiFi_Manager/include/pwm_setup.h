@@ -1,12 +1,12 @@
 #include <Arduino.h>
 
-#define led_pin_1 1
-#define led_pin_2 2
-#define tap_pin_1 4
-#define tap_pin_2 5
+#define led_pin_1 13
+#define led_pin_2 21
+#define tap_pin_1 12
+#define tap_pin_2 14
 
 // The frequency of the PWM signal
-#define PWM_FREQUENCY 5000
+#define PWM_FREQUENCY 500
 
 // The resolution of the PWM signal in bits
 #define PWM_RESOLUTION 8
