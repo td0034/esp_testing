@@ -204,9 +204,9 @@ void loop() {
 void toggleTask(void *parameter) {
   for (;;) {
     isOn = !isOn;
-    digitalWrite(left_led, isOn ? HIGH : LOW);
+    digitalWrite(right_led, isOn ? HIGH : LOW);
     digitalWrite(left_tap, isOn ? HIGH : LOW);
-    digitalWrite(right_led, isOn ? LOW : HIGH);
+    digitalWrite(left_led, isOn ? LOW : HIGH);
     digitalWrite(right_tap, isOn ? LOW : HIGH);
 
     vTaskDelay(tapperInterval / portTICK_PERIOD_MS); // Yield to other tasks

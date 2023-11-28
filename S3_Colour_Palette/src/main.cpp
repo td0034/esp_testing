@@ -3,9 +3,9 @@
 #include <FastLED.h>
 
 #define LED_PIN     38
-#define NUM_LEDS    1
-#define BRIGHTNESS  255
-#define LED_TYPE    SK6812
+#define NUM_LEDS    91
+#define BRIGHTNESS  50
+#define LED_TYPE    UCS1903
 #define COLOR_ORDER GRB
 CRGB leds[NUM_LEDS];
 
